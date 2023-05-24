@@ -204,11 +204,11 @@ int renumber_history(info_t *);
 
 
 /* lists_helper.c file prototypes */
-size_t list_size(const list_t *);
-char **list_to_string(list_t *);
-size_t prints_list(const list_t *);
-list_t *node_starts_with(list_t *, char *, char);
-ssize_t get_node_index(list_t *, list_t *);
+list_t *addnode(list_t **, const char *, int);
+list_t *addnodeend(list_t **, const char *, int);
+size_t printlist_str(const list_t *);
+int delete_node_at_index(list_t **head, unsigned int ind);
+void freelist(list_t **headptr);
 
 
 
